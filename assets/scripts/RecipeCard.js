@@ -120,8 +120,8 @@ class RecipeCard extends HTMLElement {
 		// If nothing was passed in, return
 		if (!data) return;
 
-		// A6. Done? - Select the <article> we added to the Shadow DOM in the constructor
-		let article_element = document.querySelector('recipe-card').shadowRoot.querySelector('article');
+		// A6. Done - Select the <article> we added to the Shadow DOM in the constructor
+		let article_element = this.shadowRoot.querySelector('article');
 		// A7. Done - Set the contents of the <article> with the <article> template given in
 		//           cardTemplate.html and the data passed in (You should only have one <article>,
 		//           do not nest an <article> inside another <article>). You should use template
