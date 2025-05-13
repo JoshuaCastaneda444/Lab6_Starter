@@ -8,11 +8,11 @@ class RecipeCard extends HTMLElement {
 
 		// EXPOSE - START (All expose numbers start with A)
 		// A1. Done - Attach the shadow DOM to this Web Component (leave the mode open)
-		let shadow_element = this.attachShadow({mode: 'open'});
+		const shadow_element = this.attachShadow({mode: 'open'});
 		// A2. Done - Create an <article> element - This will hold our markup once our data is set
-		let article_element = document.createElement('article');
+		const article_element = document.createElement('article');
 		// A3. Done - Create a style element - This will hold all of the styles for the Web Component
-		let style_element = document.createElement('style');
+		const style_element = document.createElement('style');
 		// A4. Done - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything INSIDE the <style> tag>)
 		style_element.textContent = 
 			`* {
@@ -121,7 +121,7 @@ class RecipeCard extends HTMLElement {
 		if (!data) return;
 
 		// A6. Done - Select the <article> we added to the Shadow DOM in the constructor
-		let article_element = this.shadowRoot.querySelector('article');
+		const article_element = this.shadowRoot.querySelector('article');
 		// A7. Done - Set the contents of the <article> with the <article> template given in
 		//           cardTemplate.html and the data passed in (You should only have one <article>,
 		//           do not nest an <article> inside another <article>). You should use template
