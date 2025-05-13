@@ -108,6 +108,8 @@ function initFormHandler() {
 		// Steps B12 & B13 will occur inside the event listener from step B11
 		// B12. Done - Clear the local storage
 		localStorage.clear();
-		// B13. TODO - Delete the contents of <main>
+		// B13. Done - Delete the contents of <main>
+		const main_element = document.querySelector('main');
+		main_element.innerHTML = '';
 	});
 }
