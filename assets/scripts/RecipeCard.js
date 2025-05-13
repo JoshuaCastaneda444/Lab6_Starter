@@ -15,7 +15,7 @@ class RecipeCard extends HTMLElement {
 		let style_element = document.createElement('style');
 		// A4. Done - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything INSIDE the <style> tag>)
 		style_element.textContent = 
-		`	* {
+			`* {
 				font-family: sans-serif;
 				margin: 0;
 				padding: 0;
