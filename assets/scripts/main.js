@@ -75,9 +75,19 @@ function initFormHandler() {
 		// Steps B4-B9 will occur inside the event listener from step B3
 		// B4. Done - Create a new FormData object from the <form> element reference above
 		const form_data = new FormData(form_element);
-		// B5. TODO - Create an empty object (we'll refer to this object as recipeObject to
+		// B5. Done - Create an empty object (we'll refer to this object as recipeObject to
 		//            make this easier to read), and then extract the keys and corresponding
 		//            values from the FormData object and insert them into recipeObject
+		const recipeObject = {};
+		recipeObject.imgSrc = form_data.get('imgSrc'); 						// "string"
+		recipeObject.imgAlt = form_data.get('imgAlt'); 						// "string"
+		recipeObject.titleLnk = form_data.get('titleLnk');					// "string"
+		recipeObject.titleTxt = form_data.get('titleTxt');					// "string"
+		recipeObject.organization = form_data.get('organization');			// "string"
+		recipeObject.rating = parseInt(form_data.get('rating'));			// number
+		recipeObject.numRatings = parseInt(form_data.get('numRatings'));	// number
+		recipeObject.lengthTime = form_data.get('lengthTime');				// "string"
+		recipeObject.ingredients = form_data.get('ingredients');			// "string"
 		// B6. TODO - Create a new <recipe-card> element
 		// B7. TODO - Add the recipeObject data to <recipe-card> using element.data
 		// B8. TODO - Append this new <recipe-card> to <main>
