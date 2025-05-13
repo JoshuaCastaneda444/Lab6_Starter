@@ -106,7 +106,8 @@ function initFormHandler() {
 	// B11. Done - Add a click event listener to clear local storage button
 	clear_local_storage_element.addEventListener('click', () => {
 		// Steps B12 & B13 will occur inside the event listener from step B11
-		// B12. TODO - Clear the local storage
+		// B12. Done - Clear the local storage
+		localStorage.clear();
 		// B13. TODO - Delete the contents of <main>
 	});
 }
