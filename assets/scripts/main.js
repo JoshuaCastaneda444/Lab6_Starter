@@ -73,7 +73,8 @@ function initFormHandler() {
 	form_element.addEventListener('submit', (e) => {
 		e.preventDefault();
 		// Steps B4-B9 will occur inside the event listener from step B3
-		// B4. TODO - Create a new FormData object from the <form> element reference above
+		// B4. Done - Create a new FormData object from the <form> element reference above
+		const form_data = new FormData(form_element);
 		// B5. TODO - Create an empty object (we'll refer to this object as recipeObject to
 		//            make this easier to read), and then extract the keys and corresponding
 		//            values from the FormData object and insert them into recipeObject
