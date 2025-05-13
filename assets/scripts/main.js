@@ -21,9 +21,10 @@ function init() {
  * @returns {Array<Object>} An array of recipes found in localStorage
  */
 function getRecipesFromStorage() {
-	// A9. TODO - Complete the functionality as described in this function
+	// A9. Done - Complete the functionality as described in this function
 	//           header. It is possible in only a single line, but should
 	//           be no more than a few lines.
+	return JSON.parse(localStorage.getItem('recipes'));
 }
 
 /**
