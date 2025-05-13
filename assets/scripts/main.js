@@ -88,7 +88,8 @@ function initFormHandler() {
 		recipeObject.numRatings = parseInt(form_data.get('numRatings'));	// number
 		recipeObject.lengthTime = form_data.get('lengthTime');				// "string"
 		recipeObject.ingredients = form_data.get('ingredients');			// "string"
-		// B6. TODO - Create a new <recipe-card> element
+		// B6. Done - Create a new <recipe-card> element
+		const recipe_card_element = document.createElement('recipe-card');
 		// B7. TODO - Add the recipeObject data to <recipe-card> using element.data
 		// B8. TODO - Append this new <recipe-card> to <main>
 		// B9. TODO - Get the recipes array from localStorage, add this new recipe to it, and
