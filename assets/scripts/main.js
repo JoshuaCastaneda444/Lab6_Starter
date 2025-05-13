@@ -92,7 +92,9 @@ function initFormHandler() {
 		const recipe_card_element = document.createElement('recipe-card');
 		// B7. Done - Add the recipeObject data to <recipe-card> using element.data
 		recipe_card_element.data = recipeObject;
-		// B8. TODO - Append this new <recipe-card> to <main>
+		// B8. Done - Append this new <recipe-card> to <main>
+		const main_element = document.querySelector('main');
+		main_element.appendChild(recipe_card_element);
 		// B9. TODO - Get the recipes array from localStorage, add this new recipe to it, and
 		//            then save the recipes array back to localStorage
 	});
